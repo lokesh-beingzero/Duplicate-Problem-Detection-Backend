@@ -1,0 +1,92 @@
+[
+  {
+    "title": "List Cycle",
+    "slug": "list-cycle",
+    "description": "Given a linked list, return the node where the cycle begins. If there is no cycle, return null.\n\nTry solving it using constant additional space.\n\nExample:\nInput:\n     ______\n     |   |\n     \\/  |\n1 -> 2 -> 3 -> 4\n\nReturn the node corresponding to node 3.\n\nNote: This is function only problem. You are required to just complete given function.\nInput Reading and Output printing is taken care by hidden instructor code.",
+    "inputFormat": "The first line of input contains an integer T, number of testcases.\nFor each test case:\n- The first line contains two integers: N (size of the linked list) and k (index of the node where the cycle starts, or -1 if no cycle exists).\n- The second line contains N integers, the elements of the linked list.\n\nInput reading is handled by hidden code.",
+    "outputFormat": "Return the node from where cycle starts in the linked list. If there is no cycle, return null.\n\nOutput printing is handled by hidden code.",
+    "constraints": "0 <= ListSize <= 10^5\n-10^9 <= NodeValues <= 10^9",
+    "tags": ["Linked List", "Cycle Detection", "Two Pointers"]
+  },
+  {
+    "title": "Remove Cycle in Linked List",
+    "slug": "remove-cycle-in-linked-list",
+    "description": "Given a linked list of integers where last node might be pointing to any of the previous nodes in the list or NULL. Write a function that removes the cycle, if found, and makes last node point to NULL.",
+    "inputFormat": "First test case contains integer T - number of test cases. Each test case consists of the following input format.\n\nTest Case Line 1: N K - Number of nodes in linked list and 0-index based position to which last node of linked list is pointing. K = -1 in case there is no cycle in the list.\nTest Case Line 2: N space separated integers, representing values in the nodes of linked list.",
+    "outputFormat": "For each test case, print the linked list node values (going left to right), space separated. Each test case output should be on a separate line.",
+    "constraints": "1 <= T <= 10\n0 <= N <= 10^5\n-1 <= K < N\n-10^9 <= NodeValues <= 10^9",
+    "tags": ["Linked List", "Cycle Detection"]
+  },
+  {
+    "title": "Cycle Length in Linked List",
+    "slug": "cycle-length-in-linked-list",
+    "description": "Given a linked list of integers where last node might be pointing to any of the previous nodes in the list or NULL. Write a function that finds the length of the cycle i.e. number of nodes that are part of the cycle, if found, return 0 otherwise.",
+    "inputFormat": "First line of input contains a single integer T - number of test cases.\n\nFirst line of each test case contains two space separated integers N and K, where N is number of nodes in the linked list and K is the 0 based position of the node to which the last node of linked list will point to.\n\nNext line contains N space separated integers denoting the linked list elements.",
+    "outputFormat": "For each test case print the length of the cycle if there is a cycle in the linked list else print 0. Output for each test case should be on a new line.",
+    "constraints": "1 <= T <= 100\n0 <= N <= 10^5\n1 <= NodeValues <= 10^9",
+    "tags": ["Linked List", "Cycle Detection", "Two Pointers"]
+  },
+  {
+    "title": "Palindrome List",
+    "slug": "palindrome-list",
+    "description": "Given a singly linked list, determine if it is a palindrome.\n\nExpected solution is linear in time and constant in space.\n\nList 1->2->1 is a palindrome.\nList 1->2->3 is not a palindrome.",
+    "inputFormat": "Input reading is already taken care by hidden code. Just complete the given function.",
+    "outputFormat": "Output printing is already taken care by hidden code. Just complete the given function.",
+    "constraints": "0 <= ListSize <= 10^5\n-10^9 <= NodeValues <= 10^9",
+    "tags": ["Linked List", "Two Pointers"]
+  },
+  {
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists",
+    "description": "Merge two sorted linked lists and return it as a new list.\n\nThe new list should be made by splicing together the nodes of the first two lists, and should also be sorted.\n\nFor example, given following linked lists:\n5 -> 8 -> 20\n4 -> 11 -> 15\n\nThe merged list should be:\n4 -> 5 -> 8 -> 11 -> 15 -> 20\n\nNote: This is function only problem. You are required to just complete given function.\nInput reading and output printing is taken care by hidden instructor code.",
+    "inputFormat": "Input reading is already taken care by hidden code. Just complete the given function.",
+    "outputFormat": "Output printing is already taken care by hidden code. Just complete the given function.",
+    "constraints": "0 <= ListSize <= 10^5\n-10^9 <= NodeValues <= 10^9",
+    "tags": ["Linked List", "Merge", "Two Pointers"]
+  },
+  {
+    "title": "Last Digit of X power N",
+    "slug": "last-digit-of-x-power-n",
+    "description": "Given a very large number X and integer N, print the last digit of X raised to the power N.",
+    "inputFormat": "First line of input contains number of testcases T.\nEach testcase contains X and N.",
+    "outputFormat": "For each test case, print the last digit of X power N.",
+    "constraints": "1 <= T <= 100000\n1 <= digitsCount(X) <= 1000000\n0 <= N <= 1000000",
+    "tags": ["Math", "Modular Arithmetic"]
+  },
+  {
+    "title": "Count Vowels",
+    "slug": "count-vowels",
+    "description": "Given a string S, count the number of vowels in the given string. For this problem, we will consider A, E, I, O, U, Y as vowels. A string is given as a non-separated single word as input.",
+    "inputFormat": "First line contains an integer T. Next T lines contain one word S per line. Input string S can have both uppercase and lowercase characters.",
+    "outputFormat": "For each test case, print a separate line containing the number of vowels in the given string.",
+    "constraints": "1 <= T <= 1000\n1 <= len(S) <= 1000",
+    "tags": ["Strings"]
+  },
+  {
+    "title": "Hated Words",
+    "slug": "hated-words",
+    "description": "Manju wants to improve English, but he hates words that have 5 or more consonants in a row. Now, Manju wants to prepare short notes where he writes all words which are not hated by him.\n\nNote: If the word does not contain 5 or more consonants in a row, then those words are not hated by Manju.\n\nNow his friends suggest N words each of length M.\n\nHelp Manju to check if the word given can be written in his short notes or not. Print No if the word is considered as a hated word, otherwise print Yes.",
+    "inputFormat": "First line of input contains integer N denoting the number of words that Manju’s friends suggest. For each suggestion, there are two lines of input, where the first line denotes length of the word M and the second line is the word W of length M.",
+    "outputFormat": "For each suggestion, print Yes if the suggested word can be written in the short notes, otherwise print No.",
+    "constraints": "1 <= N <= 100\n1 <= M <= 100\nW contains only lowercase alphabets.",
+    "tags": ["Strings"]
+  },
+  {
+    "title": "Find the thread",
+    "slug": "find-the-thread",
+    "description": "Shiva and Isha are coming back from Himachal Pradesh after their Archery training at an Ashram. While coming back on the train, they were super bored and they planned to play a game. But they had very limited resources with which they couldn’t play any game. Shiva came with an idea where he will give Isha a word S and she must find the word thread length of S.\n\nShiva explained to Isha that word thread length of word S is the maximum length of a non-empty continuous substring in the given word formed by a single character.\n\nIsha wants to win the game at any cost. Help Isha to find the word thread length of S.",
+    "inputFormat": "First line contains the number of test cases T.\nNext T lines contain string S in a separate line.\nString S contains uppercase letters only.",
+    "outputFormat": "For each test case, output an integer which denotes the word thread length of S.",
+    "constraints": "1 <= T <= 10^2\n1 <= |S| <= 500\n|S| denotes the length of S",
+    "tags": ["Strings"]
+  },
+  {
+    "title": "The Mystery Box",
+    "slug": "the-mystery-box",
+    "description": "Manju is fond of solving puzzles. He is now trying to open a mystery box. He has to enter N digits such that the code should be an even number. But he is unaware of the numbers so now he asks Geeni to help him. Geeni helps Manju by giving him a number that has N digits, and asks Manju whether that number is helpful for him or not.\n\nA number would be helpful for Manju if he could make an even number by rearranging the digits in that number. Help Manju to check whether the given number is helpful or not.",
+    "inputFormat": "The first line of input contains an integer T denoting the number of test cases.\nFor each test case, there are two lines of input:\n- The first line contains an integer N which denotes the required number of digits.\n- The second line contains a number that has N digits.",
+    "outputFormat": "For each test case, print Yes if it is possible to rearrange the digits of the number so that it becomes an even number. Otherwise, print No.",
+    "constraints": "1 <= T <= 1000\n1 <= N <= 1000\n1 <= Number <= 10^1000",
+    "tags": ["Math", "Greedy"]
+  }
+]
