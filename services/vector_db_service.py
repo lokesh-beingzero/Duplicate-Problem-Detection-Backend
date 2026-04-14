@@ -1,27 +1,43 @@
-import chromadb
-from config import CHROMA_PATH, COLLECTION_NAME
+import lancedb
+import pandas as pd
+from config import LANCE_PATH, TABLE_NAME
 
-client = chromadb.PersistentClient(path=CHROMA_PATH)
+db = lancedb.connect(LANCE_PATH)
 
-collection = client.get_or_create_collection(name=COLLECTION_NAME)
+def add_to_db(normalized_text, req, embedding):
+    data = [{
+        "vector": embedding,
+        "text": normalized_text,
+        "id": req.slug,
+        "slug": req.slug,
+        "title": req.title,
+        "description": req.description,
+        "inputFormat": req.inputFormat,
+        "outputFormat": req.outputFormat,
+        "constraints": req.constraints,
+        "tags": ", ".join(req.tags)
+    }]
 
-def add_to_db(normalized_text, req):
-    collection.add(
-        documents=[normalized_text],
-        metadatas=[{
-            "slug": req.slug,
-            "title": req.title,
-            "description": req.description,
-            "inputFormat": req.inputFormat,
-            "outputFormat": req.outputFormat,
-            "constraints": req.constraints,
-            "tags": ", ".join(req.tags)
-        }],
-        ids=[req.slug]
-    )
+    # Open existing table or create a new one if it doesn't exist
+    if TABLE_NAME in db.table_names():
+        table = db.open_table(TABLE_NAME)
+        table.add(data)
+    else:
+        # Initial creation infers the schema from the first data batch
+        db.create_table(TABLE_NAME, data=data)
 
 def query_db(embedding, top_k=5):
-    return collection.query(
-        query_embeddings=[embedding],
-        n_results=top_k
+    if TABLE_NAME not in db.table_names():
+        return []
+    
+    table = db.open_table(TABLE_NAME)
+    
+    # LanceDB uses a fluent API for searching
+    results = (
+        table.search(embedding)
+        .limit(top_k)
+        .to_list()
     )
+
+    print('results = ', results)
+    return results
