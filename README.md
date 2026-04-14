@@ -4,7 +4,7 @@ Install the dependencies
 
 fastapi 
 uvicorn 
-chromadb 
+lancedb
 google-genai 
 sentence-transformers 
 pydantic 
