@@ -6,7 +6,11 @@
     "inputFormat": "The first line of input contains an integer T, number of testcases.\nFor each test case:\n- The first line contains two integers: N (size of the linked list) and k (index of the node where the cycle starts, or -1 if no cycle exists).\n- The second line contains N integers, the elements of the linked list.\n\nInput reading is handled by hidden code.",
     "outputFormat": "Return the node from where cycle starts in the linked list. If there is no cycle, return null.\n\nOutput printing is handled by hidden code.",
     "constraints": "0 <= ListSize <= 10^5\n-10^9 <= NodeValues <= 10^9",
-    "tags": ["Linked List", "Cycle Detection", "Two Pointers"]
+    "tags": [
+      "Linked List",
+      "Cycle Detection",
+      "Two Pointers"
+    ]
   },
   {
     "title": "Remove Cycle in Linked List",
@@ -15,7 +19,10 @@
     "inputFormat": "First test case contains integer T - number of test cases. Each test case consists of the following input format.\n\nTest Case Line 1: N K - Number of nodes in linked list and 0-index based position to which last node of linked list is pointing. K = -1 in case there is no cycle in the list.\nTest Case Line 2: N space separated integers, representing values in the nodes of linked list.",
     "outputFormat": "For each test case, print the linked list node values (going left to right), space separated. Each test case output should be on a separate line.",
     "constraints": "1 <= T <= 10\n0 <= N <= 10^5\n-1 <= K < N\n-10^9 <= NodeValues <= 10^9",
-    "tags": ["Linked List", "Cycle Detection"]
+    "tags": [
+      "Linked List",
+      "Cycle Detection"
+    ]
   },
   {
     "title": "Cycle Length in Linked List",
@@ -24,7 +31,11 @@
     "inputFormat": "First line of input contains a single integer T - number of test cases.\n\nFirst line of each test case contains two space separated integers N and K, where N is number of nodes in the linked list and K is the 0 based position of the node to which the last node of linked list will point to.\n\nNext line contains N space separated integers denoting the linked list elements.",
     "outputFormat": "For each test case print the length of the cycle if there is a cycle in the linked list else print 0. Output for each test case should be on a new line.",
     "constraints": "1 <= T <= 100\n0 <= N <= 10^5\n1 <= NodeValues <= 10^9",
-    "tags": ["Linked List", "Cycle Detection", "Two Pointers"]
+    "tags": [
+      "Linked List",
+      "Cycle Detection",
+      "Two Pointers"
+    ]
   },
   {
     "title": "Palindrome List",
@@ -33,7 +44,10 @@
     "inputFormat": "Input reading is already taken care by hidden code. Just complete the given function.",
     "outputFormat": "Output printing is already taken care by hidden code. Just complete the given function.",
     "constraints": "0 <= ListSize <= 10^5\n-10^9 <= NodeValues <= 10^9",
-    "tags": ["Linked List", "Two Pointers"]
+    "tags": [
+      "Linked List",
+      "Two Pointers"
+    ]
   },
   {
     "title": "Merge Two Sorted Lists",
@@ -42,7 +56,11 @@
     "inputFormat": "Input reading is already taken care by hidden code. Just complete the given function.",
     "outputFormat": "Output printing is already taken care by hidden code. Just complete the given function.",
     "constraints": "0 <= ListSize <= 10^5\n-10^9 <= NodeValues <= 10^9",
-    "tags": ["Linked List", "Merge", "Two Pointers"]
+    "tags": [
+      "Linked List",
+      "Merge",
+      "Two Pointers"
+    ]
   },
   {
     "title": "Last Digit of X power N",
@@ -51,7 +69,10 @@
     "inputFormat": "First line of input contains number of testcases T.\nEach testcase contains X and N.",
     "outputFormat": "For each test case, print the last digit of X power N.",
     "constraints": "1 <= T <= 100000\n1 <= digitsCount(X) <= 1000000\n0 <= N <= 1000000",
-    "tags": ["Math", "Modular Arithmetic"]
+    "tags": [
+      "Math",
+      "Modular Arithmetic"
+    ]
   },
   {
     "title": "Count Vowels",
@@ -60,7 +81,9 @@
     "inputFormat": "First line contains an integer T. Next T lines contain one word S per line. Input string S can have both uppercase and lowercase characters.",
     "outputFormat": "For each test case, print a separate line containing the number of vowels in the given string.",
     "constraints": "1 <= T <= 1000\n1 <= len(S) <= 1000",
-    "tags": ["Strings"]
+    "tags": [
+      "Strings"
+    ]
   },
   {
     "title": "Hated Words",
@@ -69,7 +92,9 @@
     "inputFormat": "First line of input contains integer N denoting the number of words that Manju’s friends suggest. For each suggestion, there are two lines of input, where the first line denotes length of the word M and the second line is the word W of length M.",
     "outputFormat": "For each suggestion, print Yes if the suggested word can be written in the short notes, otherwise print No.",
     "constraints": "1 <= N <= 100\n1 <= M <= 100\nW contains only lowercase alphabets.",
-    "tags": ["Strings"]
+    "tags": [
+      "Strings"
+    ]
   },
   {
     "title": "Find the thread",
@@ -78,7 +103,9 @@
     "inputFormat": "First line contains the number of test cases T.\nNext T lines contain string S in a separate line.\nString S contains uppercase letters only.",
     "outputFormat": "For each test case, output an integer which denotes the word thread length of S.",
     "constraints": "1 <= T <= 10^2\n1 <= |S| <= 500\n|S| denotes the length of S",
-    "tags": ["Strings"]
+    "tags": [
+      "Strings"
+    ]
   },
   {
     "title": "The Mystery Box",
@@ -87,6 +114,168 @@
     "inputFormat": "The first line of input contains an integer T denoting the number of test cases.\nFor each test case, there are two lines of input:\n- The first line contains an integer N which denotes the required number of digits.\n- The second line contains a number that has N digits.",
     "outputFormat": "For each test case, print Yes if it is possible to rearrange the digits of the number so that it becomes an even number. Otherwise, print No.",
     "constraints": "1 <= T <= 1000\n1 <= N <= 1000\n1 <= Number <= 10^1000",
-    "tags": ["Math", "Greedy"]
+    "tags": [
+      "Math",
+      "Greedy"
+    ]
+  },
+  {
+    "title": "Digit Sum Sort",
+    "slug": "digit-sum-sort",
+    "description": "Given an array A of size N. You need to sort the contents of this array in ASCENDING ORDER of digit sum of elements. If two numbers have same digit sum, then bigger number should be placed first, smaller should be second.",
+    "inputFormat": "First line contains a single integer T - Number of test cases.\nEach test case consists of below pattern.\nThe first line of test case contains a single integer N denoting the size of the array.\nThe next line contains N space separated integers denoting the contents of the array.",
+    "outputFormat": "Print N space separated integers, i.e. the final sorted array.\nEach test case prints array on a separate line.",
+    "constraints": "1 <= T <= 100\n1 <= N <= 10^5\n1 <= Ai <= 10^9",
+    "tags": [
+      "Sorting",
+      "Arrays",
+      "Digit Sum"
+    ]
+  },
+  {
+    "title": "Number of Smaller",
+    "slug": "number-of-smaller",
+    "description": "You are given two arrays A and B of size an and bn respectively. Both arrays are sorted in non-decreasing order. For each element of the second array, find the number of elements in the first array strictly less than it.\n\nNOTE: Can you code the solution in linear time complexity O(an+bn).",
+    "inputFormat": "First line contains T - number of test cases.\nThe first line of each test case contains integers an and bn, the sizes of the arrays.\nThe second line contains an integers ai, elements of the first array, the third line contains bn integers bi, elements of the second array.",
+    "outputFormat": "For each test case, print a separate line of output containing bn numbers, the number of elements of the first array less than each of bi element of the second array.",
+    "constraints": "1 <= T <= 100\n1 <= an, bn <= 10^5\n-10^9 <= ai, bi <= 10^9",
+    "tags": [
+      "Arrays",
+      "Two Pointers",
+      "Binary Search"
+    ]
+  },
+  {
+    "title": "Merging Arrays",
+    "slug": "merging-arrays",
+    "description": "You are given two arrays A and B of size an and bn respectively. Both arrays are sorted in non-decreasing order. Merge them into one sorted array.\n\nPS: Code the solution in linear time O(an+bn).",
+    "inputFormat": "First line contains T - number of test cases.\n\nThe first line of each test case contains integers an and bn, the sizes of the arrays.\n\nThe second line contains an integers ai, elements of the first array, the third line contains bn integers bi, elements of the second array.",
+    "outputFormat": "For each test case, print a separate line of output containing an+bn integers, the merged array.",
+    "constraints": "1 <= T <= 100\n1 <= an, bn <= 10^5\n-10^9 <= ai, bi <= 10^9",
+    "tags": [
+      "Arrays",
+      "Two Pointers",
+      "Merge"
+    ]
+  },
+  {
+    "title": "Min Cost in 2D Matrix",
+    "slug": "min-cost-in-2d-matrix",
+    "description": "You are given a 2D matrix with N rows and M columns, where each cell value represents the cost to pass through it. Initially you are at the cell (0,0) and you need to go to the bottom most cell, whose co-ordinates are (N-1,M-1).\n\nYou can move only RIGHT or DOWN from any given cell.\n\nOut of all the possibilities to complete the journey, you need to choose the path whose sum will be minimum.\n\nAt last, print the sum of that path.\n\n(Cost of first and last cell is also included in the total cost that you will calculate).",
+    "inputFormat": "First line of input contains an integer T - representing the number of test cases.\nFor each test case:\n- First line contains 2 integers R and C - representing the number of rows and columns in the grid.\n- Then next R lines contain C integers each, representing the elements of the grid.",
+    "outputFormat": "For each test case, print a separate line of output containing minimum cost of the path.",
+    "constraints": "1 <= T <= 100\n1 <= R, C <= 100",
+    "tags": [
+      "Dynamic Programming",
+      "Matrix",
+      "Grid",
+      "Shortest Path"
+    ]
+  },
+  {
+    "title": "Equilibrium Index in Array",
+    "slug": "equilibrium-index-in-array",
+    "description": "Given array A of integers, an index idx is called Equilibrium index if it is a valid index of an element of the array and sum of all the elements to its left is equal to sum of all the elements to its right.\n\nGiven an array we need to find the equilibrium index. If no such index exists we say answer is -1. If more than one such index exists, we need to find the rightmost such index.",
+    "inputFormat": "Line 1: Integer T - Number of test cases.\nEach test case consists of two lines:\n- Test Case Line 1: Integer N - Number of elements in array. If N = 0, next line of array elements will not be given.\n- Test Case Line 2: N space separated integers representing array elements.",
+    "outputFormat": "For each test case print a separate line of output - the equilibrium index for the given array.",
+    "constraints": "1 <= T <= 100\n0 <= N <= 10^6\n-10^9 <= A[i] <= 10^9",
+    "tags": [
+      "Arrays",
+      "Prefix Sum"
+    ]
+  },
+  {
+    "title": "Sort Age or Shortage",
+    "slug": "sort-age-or-shortage",
+    "description": "There are few folks gathered in India from around the globe. They were asked to punch in their ages into the system. There is shortage of coordinators at the venue so organizers have sent that sheet our way for sorting age-wise. Can you please quickly code a program to sort given ages?",
+    "inputFormat": "First line of input contains a single integer N, number of people.\nSecond line contains N space separated integers denoting the ages of people.",
+    "outputFormat": "Print given ages in sorted order.",
+    "constraints": "1 <= N <= 100000\n0 <= ages <= 150",
+    "tags": [
+      "Sorting",
+      "Counting Sort",
+      "Arrays"
+    ]
+  },
+  {
+    "title": "Count Unique Triplets with Given Sum",
+    "slug": "count-unique-triplets-with-given-sum",
+    "description": "Given an array A of size N and a target sum S. Count unique triplets in array that have sum S. Unique means similar triplets should not be counted again.",
+    "inputFormat": "Line 1: Integer T - Number of test cases.\nThe first line of each test case contains two integers N and S.\nThe second line of each test case contains N elements of array A.",
+    "outputFormat": "For each test case print a separate line of output containing a single integer, the number of unique triplets having sum S.",
+    "constraints": "1 <= T <= 100\n1 <= N <= 1000\n-1000 <= Ai, S <= 1000",
+    "tags": [
+      "Arrays",
+      "Two Pointers",
+      "Sorting",
+      "Hashing"
+    ]
+  },
+  {
+    "title": "Rotate Elements of Array",
+    "slug": "rotate-elements-of-array",
+    "description": "Given an array of N integers, rotate elements of the array K times, which is equivalent to right shifting the array elements K times, considering the array as a circular array.\n\nFor example:\n- For N = 5, K = 1, one right shift of [1, 2, 3, 4, 5] gives [5, 1, 2, 3, 4].\n- For N = 4, K = 2, two right shifts of [1, 3, 5, 7] gives [5, 7, 1, 3].\n\nNote: Make changes in the given array itself.",
+    "inputFormat": "Input reading and output printing is taken care, just implement the given function.\n\nLine 1: Integer T - Number of test cases.\nEach test case consists of three lines:\n- TC Line 1: Integers N and K - size of array and number of rotations.\n- TC Line 2: N space separated integers.",
+    "outputFormat": "Input reading and output printing is taken care, just implement the given function.\n\nFor each test case, print the array after K rotations (K right shifts). Between two test cases, print a blank line.",
+    "constraints": "1 <= T <= 100\n1 <= N <= 10^4\n1 <= K <= 10^9\n1 <= A[i] <= 100",
+    "tags": [
+      "Arrays",
+      "Rotation",
+      "Modulo",
+      "In-place"
+    ]
+  },
+  {
+    "title": "Triplet-Sum",
+    "slug": "triplet-sum",
+    "description": "Given an array and a value, find if there is a triplet in the array whose sum is equal to the given value. If such a triplet exists print \"TRUE\", else print \"FALSE\".",
+    "inputFormat": "First line contains number of test cases t.\nFirst line of each test case contains N.\nSecond line contains N space separated integers.\nNext line contains X, the target sum.",
+    "outputFormat": "For each test case print in a new line \"TRUE\" if a triplet with the given sum exists in the array, otherwise print \"FALSE\".",
+    "constraints": "1 <= t <= 100\n1 <= N <= 1000\n-10000 <= A[i] <= 10000\n-100000 <= X <= 100000",
+    "tags": [
+      "Arrays",
+      "Two Pointers",
+      "Sorting"
+    ]
+  },
+  {
+    "title": "Max words in a card",
+    "slug": "max-words-in-a-card",
+    "description": "Manju’s 21st birthday is coming up in 10 days. Ukesh plans to give Manju a new iPhone that is recently launched. He buys the gift and packs it in a wrapper. He wants to attach a greeting card with the gift. He visits a store which has a great collection of greeting cards. Looking at all the good collections that are available, Ukesh gets confused and decides to pick a greeting card that has maximum words in it.\n\nThe store has a total of N cards and each card has a sentence S in it. The sentence consists of alphabets and spaces.\n\nUkesh is unaware of the maximum words present in a single card among N cards. Help Ukesh by telling him the maximum number of words that a card has among N different cards.\n\nNote: Do not use inbuilt functions.",
+    "inputFormat": "First line of input contains N, which denotes the number of cards.\nNext N lines each contain a sentence S representing the greeting message on each card.",
+    "outputFormat": "A single integer representing the maximum number of words present in a card among N different greeting cards.",
+    "constraints": "1 <= N <= 100\n1 <= SentenceInACard.length <= 100",
+    "tags": [
+      "Strings",
+      "Counting",
+      "Parsing"
+    ]
+  },
+  {
+    "title": "Spiral Traversal of Matrix",
+    "slug": "spiral-traversal-of-matrix",
+    "description": "Given an N x M matrix, print the elements of the matrix in spiral order. Spiral traversal is a method of traversing all elements of a matrix in a spiral pattern, starting from the top-left corner and moving in a clockwise direction until all elements are visited.",
+    "inputFormat": "First line of input contains a single integer T - Number of Test Cases.\nFirst line of each test case contains two integers N and M - number of rows and columns.\nNext line contains N x M space separated integers representing elements of the matrix.\n\nInput reading is handled by hidden code; you only need to complete the given function.",
+    "outputFormat": "Print the elements of the matrix in spiral order.\n\nThis is a functional problem; output printing is handled by hidden code. Return a list containing the spiral traversal of the matrix.",
+    "constraints": "1 <= m, n <= 100\n-100 <= matrix[i][j] <= 100",
+    "tags": [
+      "Matrix",
+      "Traversal",
+      "Simulation",
+      "Arrays"
+    ]
+  },
+  {
+    "title": "Missing Pair",
+    "slug": "missing-pair",
+    "description": "Rita is the owner of a shoe-store. She has a variety of shoes and arranges them in pairs. One day, while cleaning, she found that a shoe was missing from a pair. She suspects that the salesperson has stolen it.\n\nHelp Rita find the missing shoe.",
+    "inputFormat": "The first line is an integer T - the number of test cases.\nFor each test case:\n- The first line contains an integer N - the number of shoes.\n- The next N lines each contain an integer representing the model of the shoes.",
+    "outputFormat": "For each test case, print the type of shoe that does not have a pair, in a new line.\nEach test case has exactly one such shoe.",
+    "constraints": "1 <= T <= 10\n1 <= N <= 10^4\n1 <= model <= 10^4\nN will be an odd number.\nT * N will always be less than 10^4.",
+    "tags": [
+      "Arrays",
+      "Bit Manipulation",
+      "Hashing"
+    ]
   }
 ]

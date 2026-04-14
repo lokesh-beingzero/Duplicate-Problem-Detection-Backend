@@ -85,17 +85,19 @@ def check_duplicate(prob: DuplicateProblemSchema):
 
     matches = []
 
-    for i in range(len(results["documents"][0])):
-        distance = results["distances"][0][i]
-        metadata = results["metadatas"][0][i]
-
+    for i in range(len(results)):
+        distance = results[i]["_distance"]
+        slug = results[i]["slug"]
+        title = results[i]["title"]
+        description = results[i]["description"]
+        tags = results[i]["tags"]
         similarity = round(1 - distance, 4)
 
         matches.append({
-            "slug": metadata["slug"],
-            "title": metadata["title"],
-            "description": metadata["description"],
-            "tags": metadata["tags"],
+            "slug": slug,
+            "title": title,
+            "description": description,
+            "tags": tags,
             "similarity": similarity
         })
 
